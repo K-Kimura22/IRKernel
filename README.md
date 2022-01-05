@@ -9,19 +9,18 @@ The following are implemented as the current implementation.<br>
 ・Simple signal mechanism<br>
 ・Simple scheduling mechanism<br>
 # Requirements
-## OS
+### OS
 ・Linux 4.18
-## Functions and variables to EXPORT
-### Function
+###  EXPORT Function
 ・si_swapinfo (mm/swapfile.c)<br>
 ・oom_badness (mm/oom_kill.c)<br>
-### Variable
+###  EXPORT Variable
 ・total_swap_pages (mm / swapfile.c)<br>
 ・runqueues (kernel / sched / core.c)<br>
 
 # How to
 Download IRKernel
-'cd IRKernel'
-'make'
-'insmod system.ko'
+`cd IRKernel`
+`make`
+`insmod system.ko`
 If you want to change the detection or recovery settings, change the contents of systemcall.h.
