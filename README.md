@@ -19,8 +19,8 @@ The following are implemented as the current implementation.<br>
 ・runqueues (kernel / sched / core.c)<br>
 
 # How to
-Download IRKernel
-`cd IRKernel`
-`make`
-`insmod system.ko`
+`Download IRKernel`<br>
+`cd IRKernel`<br>
+`make`<br>
+`insmod system.ko`<br>
 If you want to change the detection or recovery settings, change the contents of systemcall.h.
