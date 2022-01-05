@@ -1,0 +1,1 @@
+cmd_/home/ksl/Internal_Recovery/system.o := ld -m elf_x86_64  -z max-page-size=0x200000   -r -o /home/ksl/Internal_Recovery/system.o /home/ksl/Internal_Recovery/systemcall.o /home/ksl/Internal_Recovery/memory_leak.o /home/ksl/Internal_Recovery/fork.o /home/ksl/Internal_Recovery/signal.o /home/ksl/Internal_Recovery/ipi.o /home/ksl/Internal_Recovery/fair.o 

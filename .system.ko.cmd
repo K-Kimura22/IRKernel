@@ -1,0 +1,1 @@
+cmd_/home/ksl/Internal_Recovery/system.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/ksl/Internal_Recovery/system.ko /home/ksl/Internal_Recovery/system.o /home/ksl/Internal_Recovery/system.mod.o ;  true
