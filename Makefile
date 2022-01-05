@@ -10,4 +10,4 @@ all:
 	$(MAKE) -C $(KDIR) M=$(PWD) modules
 
 clean:
-	rm -f *.o *.ko *.mod.c Module.symvers modules.order
+	$(MAKE) -C $(KDIR) M=$(PWD) modules clean
