@@ -4,16 +4,6 @@
 #include <linux/nsproxy.h>
 #include "systemcall.h"
 
-/*EXPORT関数*/
-typedef void (*g_swapinfo)(struct sysinfo *);
-g_swapinfo si_swapinfo = (g_swapinfo)0xffffffff8124bfe0;
-typedef unsigned long (*g_oom_badness)(struct task_struct *, struct mem_cgroup *,
-				       const nodemask_t *, unsigned long);
-g_oom_badness oom_badness = (g_oom_badness)0xffffffff811f05c0;
-long *total_swap_pages = (long *)0xffffffff82871278;
-
-/*EXPORT関数*/
-
 static int proc_oom_score(struct pid_namespace *ns, struct task_struct *task)
 {
   unsigned long totalpages = totalram_pages + *total_swap_pages;

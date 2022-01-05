@@ -1,1 +1,0 @@
-cmd_/home/ksl/IRKernel/system.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/ksl/IRKernel/system.ko /home/ksl/IRKernel/system.o /home/ksl/IRKernel/system.mod.o ;  true
